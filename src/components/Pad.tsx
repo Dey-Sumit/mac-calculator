@@ -22,9 +22,9 @@ interface Props {
   currentOperator: string;
 }
 
-const Pad: FC<Props> = ({ value, clickHandler, currentOperator }) => {
+const Pad: FC<Props> = ({ value, clickHandler, currentOperator, ...props }) => {
   return (
-    <button className={getStyles(value, currentOperator)} onClick={() => clickHandler(value)}>
+    <button className={getStyles(value, currentOperator)} onClick={() => clickHandler(value)} {...props}>
       {value}
     </button>
   );

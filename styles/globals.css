@@ -12,6 +12,6 @@
     @apply overflow-hidden text-xl border border-gray-600 rounded-lg;
   }
   .display {
-    @apply w-full px-3 py-6 text-2xl border border-gray-800;
+    @apply w-full px-3 py-4 text-4xl text-right border border-gray-800;
   }
 }
