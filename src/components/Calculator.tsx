@@ -84,7 +84,7 @@ const pads = [
   },
 ];
 
-const Calculator2 = () => {
+const Calculator = () => {
   const [rawContent, setRawContent] = useState(""); // holds operands and operator
   const [displayContent, setDisplayContent] = useState("0"); // holds operands
 
@@ -173,4 +173,4 @@ const Calculator2 = () => {
   );
 };
 
-export default Calculator2;
+export default Calculator;
