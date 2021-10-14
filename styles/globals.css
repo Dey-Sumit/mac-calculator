@@ -1,5 +1,17 @@
-/* if vs code shows warning , go to setting -> CSS> Lint:Unknown At Rules -> select ignore */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-white bg-gray-900;
+  }
+}
+@layer components {
+  .calculator-wrapper {
+    @apply overflow-hidden text-xl border border-gray-600 rounded-lg;
+  }
+  .display {
+    @apply w-full px-3 py-6 text-2xl border border-gray-800;
+  }
+}
